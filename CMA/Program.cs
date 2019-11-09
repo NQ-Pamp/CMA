@@ -13,11 +13,10 @@ namespace CMA
             int num = 8;
 
             // Saying hi to CMA
-
-            Console.WriteLine("Bienvenue aux CMA Paris !");
-            Console.WriteLine("My number is : " + num);
+            Console.WriteLine("Hello sir !");
+            Console.WriteLine("Your number is : " + num);
             num = 32;
-            Console.WriteLine("My number is : " + num);
+            Console.WriteLine("Your number is : " + num);
 
             int a = 1;
             int result = a++;
