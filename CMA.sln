@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02Affect", "02Affect\02Affe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crepes", "Crepes\Crepes.csproj", "{A5AFC038-238D-4876-8739-55693F244D1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switchLesson", "switchLesson\switchLesson.csproj", "{6E299E3F-6040-4691-A0FF-EA0F6FFAB6D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A5AFC038-238D-4876-8739-55693F244D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AFC038-238D-4876-8739-55693F244D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AFC038-238D-4876-8739-55693F244D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E299E3F-6040-4691-A0FF-EA0F6FFAB6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E299E3F-6040-4691-A0FF-EA0F6FFAB6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E299E3F-6040-4691-A0FF-EA0F6FFAB6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E299E3F-6040-4691-A0FF-EA0F6FFAB6D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,8 +8,48 @@ namespace Crepes
 {
     class Program
     {
+
+        static int initMoney;
+        static int newMoney;
+
+        static void SayHi(string name)
+        { 
+            Console.WriteLine("Hello Mr " + name);
+            initMoney = 1000;
+            Console.WriteLine("You have " + initMoney + " euros in your account.\n");
+        }
+
+        static void MakeOps(int ammount)
+        {
+            newMoney = initMoney + ammount;
+
+            if (ammount > 0)
+            {
+                Console.WriteLine("You have just added " + (newMoney - initMoney) + " euros to your account.");
+                Console.WriteLine("You now have " + newMoney + " euros in your account.\n");
+            }
+            else if (ammount < 0)
+            {
+                Console.WriteLine("You made a withdrawal of : " + (newMoney - initMoney));
+                Console.WriteLine("You now have " + newMoney + " euros in your account.\n");
+            }
+            else
+            {
+                Console.WriteLine("Blank operation");
+            }
+
+            initMoney = newMoney;
+        }
+
         static void Main(string[] args)
         {
+
+            SayHi("TOUDERT");
+            MakeOps(500);
+            MakeOps(-400);
+            MakeOps(-1000);
+            MakeOps(2500);
+
             /*
             string mySize = "";
             string tab = "\t";
@@ -34,38 +74,6 @@ namespace Crepes
             Console.WriteLine(tab + "Enjoy ;)");
             Console.WriteLine(Environment.NewLine);
             */
-
-            string name = "TOUDERT";
-            int initMoney = 1000;
-            int moneyTransaction;
-            int newMoney;
-
-            Console.WriteLine("Hello Mr " + name);
-            Console.WriteLine("You have " + initMoney + " euros in your account.");
-
-            //Making an operation
-            moneyTransaction = 500;
-            newMoney = initMoney + moneyTransaction;
-
-            if (newMoney > initMoney)
-            {
-                Console.WriteLine("You have just added " + (newMoney - initMoney) + " euros to your account.");
-                Console.WriteLine("You have " + newMoney + " euros in your account.");
-            }
-            else if (newMoney < initMoney)
-            {
-                Console.WriteLine("You made a withdrawal of : " + (newMoney - initMoney));
-                Console.WriteLine("You have " + newMoney + " euros in your account.");
-            }
-            else
-            {
-                Console.WriteLine("Blank operation");
-            }
-
-
-
- 
-
         }
     }
 }
